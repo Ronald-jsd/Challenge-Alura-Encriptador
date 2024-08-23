@@ -54,7 +54,7 @@ body.light-mode {
 body {
     box-sizing: border-box;
     background-color: var(--color-primario);
-    background-image: url(/img/image-background.png);
+    background-image: url('./image-background.png');
     background-position: right;
     background-size: auto;
     background-repeat: no-repeat;
