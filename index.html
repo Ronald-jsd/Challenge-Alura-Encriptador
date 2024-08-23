@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="icon" href="./img/encriptado.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Oswald:wght@200..700&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+
+<body>
+    <div class="container_general">
+        <div class=" presentacion_tema">
+            <button id="theme-toggle" class="tema-color">
+                <svg id="sun-icon" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 30">
+                    <circle cx="15" cy="15" r="6" fill="currentColor" />
+                    <line id="ray" stroke="currentColor" stroke-width="2" stroke-linecap="round" x1="15" y1="1" x2="15"
+                        y2="4"></line>
+                    <use href="#ray" transform="rotate(45 15 15)" />
+                    <use href="#ray" transform="rotate(90 15 15)" />
+                    <use href="#ray" transform="rotate(135 15 15)" />
+                    <use href="#ray" transform="rotate(180 15 15)" />
+                    <use href="#ray" transform="rotate(225 15 15)" />
+                    <use href="#ray" transform="rotate(270 15 15)" />
+                    <use href="#ray" transform="rotate(315 15 15)" />
+                </svg>
+
+                <svg id="moon-icon" class="icon hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 30"
+                    fill="currentColor">
+                    <path d="M 23, 5
+                A 12 12 0 1 0 23, 25
+                A 12 12 0 0 1 23, 5" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="section1">
+            <div class="section1_logo">
+                <img src="./img/Logo.png" alt="Logo Alura">
+            </div>
+            <div class="section1_textarea">
+                <textarea name="" id="textarea" placeholder="Ingrese el texto aquí"></textarea>
+                <p id="avisoDeMayusculas" class="section1_parrafo_aviso">
+                    <img src="./img/bi_exclamation-circle-fill.png" alt="Icono Advertencia">
+                    Solo letras minúsculas y sin acentos
+                </p>
+                <div class="section1_botones_container">
+                    <button id="btnEncriptar" class="section1_btn_encriptar section1_boton">Encriptar</button>
+                    <button id="btnDesencriptar" class="section1_btn_desencriptar section1_boton">Desencriptar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="section2" id="section2">
+            <textarea id="respuesta_encriptado" class="section2_ocultar"></textarea>
+            <img src="./img/Muñeco.png" alt="Figura observando" class="section2_img section2_ocultar" id="section2_img">
+            <div class="section2_mensaje">
+                <h2 id="h2" class="section2_recuadro section2_ocultar">Ningún mensaje fue encontrado</h2>
+                <p class="section2_recuadro section2_ocultar section2_parrafo">Ingresa el texto que desees encriptar o
+                    desencriptar</p>
+            </div>
+            <div class="boton_section2" id="boton_section2">
+                <button id="btnCopiar" class="section2_boton section1_boton">Copiar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <span>&copy; 2024 Ronald Santiago</span>
+        <div>
+            <a href="https://github.com/Ronald-jsd">
+                <img src="./img/icon-github.png" style="height: 40px; width: 40px;" alt="icono-github">
+            </a>
+            <a href="https://www.linkedin.com/in/ronald-santiago-jaime-duran/">
+                <img src="./img/icon-linkedin.png " style="height:40px; width: 40px" alt="icono-LinkedIn">
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/temas.js"></script>
+</body>
+
+</html>
