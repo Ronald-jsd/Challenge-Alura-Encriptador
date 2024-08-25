@@ -33,8 +33,14 @@ body.light-mode {
 
 .icon {
     fill: black;
-    height: 2.1rem;
     filter: drop-shadow(rgba(255, 255, 255, 0.81) 0px 5px 10px);
+    font-size: 30px;
+    transition: all 0.4s;
+}
+
+.icon:hover {
+    filter: drop-shadow(rgba(41, 41, 42, 0.81) 0px 5px 15px);
+    transition: all 0.4s;
 }
 
 #sun-icon {
@@ -121,7 +127,6 @@ body {
 }
 
 .section1_boton {
-
     display: flex;
     justify-content: center;
     font-family: var(--fuente-Inter);
@@ -182,7 +187,6 @@ body {
     font-weight: bold;
     font-size: 1.5rem;
     color: var(--color-textoArea);
-
 }
 
 .section2_parrafo {
@@ -214,7 +218,7 @@ body {
 }
 
 .section2_boton:hover {
-    background-color: #d3d6da;
+    background-color: #dad7d3;
 }
 
 #respuesta_encriptado {
@@ -249,6 +253,8 @@ footer span {
 
 footer img {
     margin: 0 5px 0 5px;
+    width: 40px;
+    height: 40px;
 }
 
 /* tablet */
